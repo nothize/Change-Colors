@@ -81,6 +81,9 @@ function buildCssToInject(){
                'font-family: '+ fontName  +' !important;'+ 
 	       'font-size: '+ fontSize +'pt }';
     }
+    if ( !loadOption("ShowImage") ) {
+	    css += 'img { display:none; }';
+	}
     CssToInject = css;
 }
 
